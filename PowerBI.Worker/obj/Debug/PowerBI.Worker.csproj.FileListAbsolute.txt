@@ -1,0 +1,15 @@
+D:\Personal\PowerBI.Worker\PowerBI.Worker\bin\Debug\PowerBI.Worker.exe.config
+D:\Personal\PowerBI.Worker\PowerBI.Worker\bin\Debug\PowerBI.Worker.exe
+D:\Personal\PowerBI.Worker\PowerBI.Worker\bin\Debug\PowerBI.Worker.pdb
+D:\Personal\PowerBI.Worker\PowerBI.Worker\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+D:\Personal\PowerBI.Worker\PowerBI.Worker\bin\Debug\Microsoft.PowerBI.Api.dll
+D:\Personal\PowerBI.Worker\PowerBI.Worker\bin\Debug\Microsoft.Rest.ClientRuntime.dll
+D:\Personal\PowerBI.Worker\PowerBI.Worker\bin\Debug\Newtonsoft.Json.dll
+D:\Personal\PowerBI.Worker\PowerBI.Worker\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.pdb
+D:\Personal\PowerBI.Worker\PowerBI.Worker\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.xml
+D:\Personal\PowerBI.Worker\PowerBI.Worker\bin\Debug\Microsoft.Rest.ClientRuntime.xml
+D:\Personal\PowerBI.Worker\PowerBI.Worker\bin\Debug\Newtonsoft.Json.xml
+D:\Personal\PowerBI.Worker\PowerBI.Worker\obj\Debug\PowerBI.Worker.csprojAssemblyReference.cache
+D:\Personal\PowerBI.Worker\PowerBI.Worker\obj\Debug\PowerBI.Worker.csproj.CopyComplete
+D:\Personal\PowerBI.Worker\PowerBI.Worker\obj\Debug\PowerBI.Worker.exe
+D:\Personal\PowerBI.Worker\PowerBI.Worker\obj\Debug\PowerBI.Worker.pdb
