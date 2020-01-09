@@ -1,3 +1,5 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/cbf25798498b45ae87d5730315a51ab6)](https://www.codacy.com/manual/nitinsapru01/PowerBI?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=saprunitin/PowerBI&amp;utm_campaign=Badge_Grade)
+
 # PowerBI
 Provides a .NET based solution to interact with PowerBI REST APIs for helping developers monitor, manage &amp; administer their PowerBI reports.
 
