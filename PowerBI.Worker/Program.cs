@@ -20,8 +20,8 @@ namespace PowerBI.Worker
                 ConfigurationManager.configurationSettings[ConfigurationKeys.AzureActiveDirectoryKeys.ClientId],
                 ConfigurationManager.configurationSettings[ConfigurationKeys.AzureActiveDirectoryKeys.ClientSecret]);
 
-            // Generates the bearer token runtime.//
-            var bearerToken = authenticatePowerbiService.GenerateBearerToken(
+            // Generates the bearer token runtime by using service principal & user credentials.//
+            var bearerToken = authenticatePowerbiService.GenerateBearerTokenByPricipalUserCredentials(
                 ConfigurationManager.configurationSettings[ConfigurationKeys.PowerBIApiKeys.ResourceUrl]).Result;
 
             // Create an instance of the powerbi client object to be used to call PowerBI APIs.//

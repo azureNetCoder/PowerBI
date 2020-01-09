@@ -24,7 +24,7 @@ namespace PowerBI.Worker.Authentication
             this.clientSecret = clientSecret;
         }
 
-        public async Task<string> GenerateBearerToken(string resoureUrl)
+        public async Task<string> GenerateBearerTokenByPricipalUserCredentials(string resoureUrl)
         {
             if(string.IsNullOrEmpty(resoureUrl))
             {
@@ -34,13 +34,44 @@ namespace PowerBI.Worker.Authentication
             try
             {
                 var authContext = new AuthenticationContext(this.autorityUrl);
-                var clientCreds = new ClientCredential(this.clientId, this.clientSecret);
 
-                var authenticationResult = await authContext.AcquireTokenAsync(resoureUrl, clientCreds).ConfigureAwait(false);
+                var userAuth = new UserPasswordCredential(
+                    ConfigurationManager.configurationSettings[ConfigurationKeys.UserKeys.UserName],
+                    ConfigurationManager.configurationSettings[ConfigurationKeys.UserKeys.Password]);
+
+                var authenticationResult = await authContext.AcquireTokenAsync(
+                    resoureUrl,
+                    this.clientId,
+                    userAuth).ConfigureAwait(false);
 
                 return authenticationResult.AccessToken;
             }
             catch (AdalException ex) 
+            {
+                throw new InvalidOperationException(ex.Message);
+            }
+        }
+
+        public async Task<string> GenerateBearerTokenUsingAADApplication(string resoureUrl)
+        {
+            if (string.IsNullOrEmpty(resoureUrl))
+            {
+                return null;
+            }
+
+            try
+            {
+                var authContext = new AuthenticationContext(this.autorityUrl);
+
+                var clientCredentials = new ClientCredential(this.clientId, this.clientSecret);
+
+                var authenticationResult = await authContext.AcquireTokenAsync(
+                    resoureUrl,
+                    clientCredentials).ConfigureAwait(false);
+
+                return authenticationResult.AccessToken;
+            }
+            catch (AdalException ex)
             {
                 throw new InvalidOperationException(ex.Message);
             }

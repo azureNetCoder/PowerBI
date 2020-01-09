@@ -8,6 +8,13 @@ namespace PowerBI.Worker.Common
 {
     public static class ConfigurationKeys
     {
+        public static class UserKeys
+        {
+            public const string UserName = "user.username";
+
+            public const string Password = "user.password";
+        }
+
         public static class AzureActiveDirectoryKeys
         {
             public const string TenantId = "aad.tenantId";
