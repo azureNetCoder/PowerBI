@@ -11,6 +11,7 @@ The overall flow of this application is:
 <ul>
   <li><b>Authenticate:</b> This application authenticates user on behalf of an AAD application which has to be register in the tenant in which the PowerBI service also belongs to.</li>
   <li><b>Invoke PowerBI Service:</b> PowerBI service is nothing but a set of RESTFul APIs which are exposed by the PowerBI team @ Microsoft for providing developer support to resources which are lying in the PowerBI eco-system. The developers can easily monitor, manage & administer the reports, dashboards, datasets & workspaces which are in PowerBI using these services. <a href="https://docs.microsoft.com/en-us/rest/api/power-bi/">MSDN Documenation of PowerBI REST API's</a></li>
+  <li><b>Model JSON data into objects:</b> The return type from all of the API endpoints provided by PowerBI service is of JSON type, which then needs to be converted into a standard object oriented model for further processing.</li>
 </ul>
 
 <p>Documentation in progress.....</p>
